@@ -1,0 +1,27 @@
+- add playername to header?
+    - has no effect on data, just for user reference
+
+- reorganise shit so the data is like
+    header: {skillName, level, loadout, etc},
+    itemsReceived: {logs: {1,2,3} etc}
+- not sure if this would be good to break backwards compatability just yet. maybe another day when there's a need for it
+
+- make some kind of data compressor?
+    - takes in a few sequential files and condenses the loosies from the old version
+    - no effect on data collected. not worth doing unless other changes require changing the format of saved data
+
+- probably need to do some bullshit to make it work with crime
+
+- test other skills
+    - fishing
+        - two vars: level, fish type
+        - fishing rod does apparently affect the number of rare items you get, according to Dew
+        - do we know which fishing type we're at just from the target? or will we have to infer from the items collected?
+            - i don't like inference!!
+    - mining
+        - three vars: level, pickaxe type, rock type
+    - harvesting
+        - three vars: level, glove type, plant type
+    - crime
+        - two vars: level, npc
+        - different mechanics than other skills, need to test

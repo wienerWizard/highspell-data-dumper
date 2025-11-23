@@ -1,0 +1,17 @@
+v0.3.0
+    - now merges new data with old data, where there's no change in stats/loadout/skill/etc
+        - also fixes mining/harvesting, which would always shit the entire header into storage for every single item collected (not good)
+    - add pretty print toggle (doubles file size...)
+
+v0.2.0
+    - modified output, now logs data for each individual item as it's collected
+    - add more data about logged items (IOU state)
+    - add target entity data
+
+v0.1.0
+    - initial trial, level 1 -> 40 forestry
+    - collecting duration and items collected over a skilling instance (few seconds to a few mins) for each datapoint
+    - worked fine, but data collected was shitty and not useful
+        - trailing time where nothing was collected was still logged, and threw off averages
+        - averaging time per item was effectively random in the trial
+        - not fit for purpose!!! change needed
